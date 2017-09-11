@@ -1,0 +1,7 @@
+_build/
+deps/
+docs/
+.gitignore
+.travis.yml
+LICENSE
+README.md

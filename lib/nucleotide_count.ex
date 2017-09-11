@@ -17,6 +17,7 @@ defmodule NucleotideCount do
       iex> NucleotideCount.count("GGGGGTAACCCGG", "T")
       1
   """
+  @spec count(String.t, String.t) :: integer
   def count(dna_string, nucleotide) do
     dna_string
     |> String.codepoints
@@ -37,9 +38,11 @@ defmodule NucleotideCount do
       iex> NucleotideCount.histogram("AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC")
       %{A => 20, T => 21, C => 12, G => 17}
   """
+  @spec histogram(String.t) :: %{A => integer, T => integer, C => integer, G => integer}
   def histogram(dna_string) do
     dna_string
     |> String.codepoints
+    # credo:disable-for-lines:6
     |> Enum.reduce(%{A => 0, T => 0, C => 0, G => 0}, fn(x, acc) ->
       case x do
         "A" -> Map.update(acc, A, 0, fn(value) -> value + 1 end)
