@@ -13,7 +13,7 @@ My solutions to Elixir [Exercism](http://exercism.io/languages/elixir/exercises)
   - [Build](#build)
   - [Code Formatting](#code-formatting)
   - [Dependencies](#dependencies)
-  - [Elixir Static Code Analysis](#elixir-static-code-analysis)
+  - [Static Code Analysis](#elixir-static-code-analysis)
   - [Test](#test)
 - [License](#license)
 
