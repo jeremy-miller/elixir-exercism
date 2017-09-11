@@ -18,7 +18,9 @@ defmodule NucleotideCount do
       1
   """
   def count(dna_string, nucleotide) do
-    :todo
+    dna_string
+    |> String.codepoints
+    |> Enum.count(fn(x) -> x == nucleotide end)
   end
 
   @doc ~S"""
@@ -27,15 +29,24 @@ defmodule NucleotideCount do
   ## Examples
 
       iex> NucleotideCount.histogram("")
-      %{"A" => 0, "T" => 0, "C" => 0, "G" => 0}
+      %{A => 0, T => 0, C => 0, G => 0}
 
       iex> NucleotideCount.histogram("GGGGGGGG")
-      %{"A" => 0, "T" => 0, "C" => 0, "G" => 8}
+      %{A => 0, T => 0, C => 0, G => 8}
 
       iex> NucleotideCount.histogram("AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC")
-      %{"A" => 20, "T" => 21, "C" => 12, "G" => 17}
+      %{A => 20, T => 21, C => 12, G => 17}
   """
   def histogram(dna_string) do
-    :todo
+    dna_string
+    |> String.codepoints
+    |> Enum.reduce(%{A => 0, T => 0, C => 0, G => 0}, fn(x, acc) ->
+      case x do
+        "A" -> Map.update(acc, A, 0, fn(value) -> value + 1 end)
+        "T" -> Map.update(acc, T, 0, fn(value) -> value + 1 end)
+        "C" -> Map.update(acc, C, 0, fn(value) -> value + 1 end)
+        "G" -> Map.update(acc, G, 0, fn(value) -> value + 1 end)
+      end
+    end)
   end
 end

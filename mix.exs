@@ -9,8 +9,8 @@ defmodule Exercism.Mixfile do
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       deps: deps(),
-      test_coverage: [tool: ExCoveralls],
-      preferred_cli_env: ["coveralls": :test, "coveralls.detail": :test, "coveralls.post": :test]
+      #test_coverage: [tool: ExCoveralls],
+      #preferred_cli_env: ["coveralls": :test, "coveralls.detail": :test, "coveralls.post": :test]
     ]
   end
 
@@ -35,7 +35,7 @@ defmodule Exercism.Mixfile do
     [
       {:credo, "~> 0.8", only: :dev, runtime: false},
       {:dialyxir, "~> 0.5", only: :dev, runtime: false},
-      {:excoveralls, "~> 0.7", only: :test, runtime: false},
+      #{:excoveralls, "~> 0.7", only: :test, runtime: false},
       {:exfmt, "~> 0.5", only: :dev, runtime: false},
       {:mix_test_watch, "~> 0.5", only: :dev, runtime: false}
     ]
