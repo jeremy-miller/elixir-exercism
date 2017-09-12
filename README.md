@@ -15,6 +15,7 @@ My solutions to Elixir [Exercism](http://exercism.io/languages/elixir/exercises)
   - [Dependencies](#dependencies)
   - [Static Code Analysis](#elixir-static-code-analysis)
   - [Test](#test)
+  - [Run](#run)
 - [License](#license)
 
 ## Motivation
@@ -54,6 +55,18 @@ To run the Exercism tests, execute the following command:
 
 To run the Life tests automatically on save during local development, execute the following command:
 ```docker run -it --rm -v $PWD:/usr/src/app/ jeremymiller/exercism mix test.watch```
+
+### Run
+Each exercise has its own file in the *lib* directory of this repository.  Each file contains usage examples
+in the documentation of the public functions.  To run a particular exercise, execute the following steps.
+
+1. Compile the source files and start the *iex* REPL by executing the following command:
+```docker run -it --rm jeremymiller/exercism```
+2. Execute a command from the usage examples of a particular file.  For example:
+```elixir
+iex> NucleotideCount.count("GGGGGTAACCCGG", "T")
+1
+```
 
 ## License
 [MIT](https://github.com/jeremy-miller/exercism/blob/master/LICENSE)
