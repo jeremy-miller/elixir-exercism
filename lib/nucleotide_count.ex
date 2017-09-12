@@ -42,13 +42,14 @@ defmodule NucleotideCount do
   def histogram(dna_string) do
     dna_string
     |> String.codepoints
-    # credo:disable-for-lines:6
+    # credo:disable-for-lines:7
     |> Enum.reduce(%{A => 0, T => 0, C => 0, G => 0}, fn(x, acc) ->
       case x do
         "A" -> Map.update(acc, A, 0, fn(value) -> value + 1 end)
         "T" -> Map.update(acc, T, 0, fn(value) -> value + 1 end)
         "C" -> Map.update(acc, C, 0, fn(value) -> value + 1 end)
         "G" -> Map.update(acc, G, 0, fn(value) -> value + 1 end)
+        _   -> acc
       end
     end)
   end
