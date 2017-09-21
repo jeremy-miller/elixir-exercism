@@ -37,7 +37,7 @@ defmodule SecretHandshake do
   """
   @spec commands(integer) :: [String.t]
   def commands(number) do
-    # credo:disable-for-next-line
+    # credo:disable-for-next-line Credo.Check.Readability.LargeNumbers
     reverse_value = number &&& 10000
     actions = get_actions(reverse_value, number)
     if reverse_value > 0 do
