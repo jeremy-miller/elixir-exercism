@@ -28,8 +28,10 @@ defmodule SecretHandshake do
 
       iex> SecretHandshake.commands(1)
       ["wink"]
+
       iex> SecretHandshake.commands(2)
       ["double blink"]
+      
       iex> SecretHandshake.commands(4)
       ["close your eyes"]
   """

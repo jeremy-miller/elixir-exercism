@@ -10,7 +10,7 @@ defmodule NucleotideCount do
 
       iex> NucleotideCount.count("", "A")
       0
-
+      
       iex> NucleotideCount.count("CCCCC", "C")
       5
 

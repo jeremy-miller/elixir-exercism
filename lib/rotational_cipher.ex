@@ -12,6 +12,7 @@ defmodule RotationalCipher do
 
       iex> RotationalCipher.rotate("a", 1)
       "b"
+      
       iex> RotationalCipher.rotate("a", 2)
       "c"
   """
