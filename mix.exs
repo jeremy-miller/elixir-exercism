@@ -35,7 +35,7 @@ defmodule Exercism.Mixfile do
     [
       {:credo, "~> 0.8", only: :dev, runtime: false},
       {:dialyxir, "~> 0.5", only: :dev, runtime: false},
-      #{:excoveralls, "~> 0.7", only: :test, runtime: false},
+      #{:excoveralls, "~> 0.7", only: :test, runtime: false},  # errors when compiling a dependency; causes 'mix test' to fail
       {:exfmt, "~> 0.5", only: :dev, runtime: false},
       {:mix_test_watch, "~> 0.5", only: :dev, runtime: false}
     ]
