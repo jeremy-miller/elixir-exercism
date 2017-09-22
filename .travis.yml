@@ -8,3 +8,5 @@ script:
   - docker run -it --rm --env MIX_ENV=dev jeremymiller/exercism mix credo
   - docker run -it --rm --env MIX_ENV=dev jeremymiller/exercism mix dialyzer --no-compile --no-check --halt-exit-status
   - docker run -it --rm --env MIX_ENV=test jeremymiller/exercism mix test
+after_script:
+  - MIX_ENV=docs mix inch.report
