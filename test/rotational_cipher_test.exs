@@ -57,5 +57,12 @@ defmodule RotationalCipherTest do
       shift = 13
       assert RotationalCipher.rotate(plaintext, shift) === "Gur dhvpx oebja sbk whzcf bire gur ynml qbt."
     end
+
+    test "length of plaintext input and ciphertext output match" do
+      ptest plaintext: string(), shift: int(min: 0, max: 26) do
+        ciphertext = RotationalCipher.rotate(plaintext, shift)
+        assert String.length(ciphertext) === String.length(plaintext)
+      end
+    end
   end
 end
