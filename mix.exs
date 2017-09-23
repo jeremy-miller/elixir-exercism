@@ -35,7 +35,7 @@ defmodule Exercism.Mixfile do
     [
       {:credo, "~> 0.8", only: :dev, runtime: false},
       {:dialyxir, "~> 0.5", only: :dev, runtime: false},
-      {:excoveralls, "~> 0.7", only: :test, runtime: false},
+      {:excoveralls, "~> 0.7", only: :test, runtime: false},  # sudo dnf install erlang-rebar
       {:exfmt, "~> 0.5", only: :dev, runtime: false},
       {:inch_ex, "~> 0.5", only: :docs, runtime: false},
       {:mix_test_watch, "~> 0.5", only: :dev, runtime: false},
