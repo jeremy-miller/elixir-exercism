@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.org/jeremy-miller/exercism.svg?branch=master)](https://travis-ci.org/jeremy-miller/exercism)
-[![Coverage Status](https://coveralls.io/repos/github/jeremy-miller/exercism/badge.svg?branch=master)](https://coveralls.io/github/jeremy-miller/exercism?branch=master)
+[![Build Status](https://travis-ci.org/jeremy-miller/exercism-elixir.svg?branch=master)](https://travis-ci.org/jeremy-miller/exercism-elixir)
+[![Coverage Status](https://coveralls.io/repos/github/jeremy-miller/exercism-elixir/badge.svg?branch=master)](https://coveralls.io/github/jeremy-miller/exercism-elixir?branch=master)
 [![Inline docs](http://inch-ci.org/github/jeremy-miller/exercism.svg)](http://inch-ci.org/github/jeremy-miller/exercism)
-[![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jeremy-miller/exercism/blob/master/LICENSE)
+[![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jeremy-miller/exercism-elixir/blob/master/LICENSE)
 [![Elixir Version](https://img.shields.io/badge/Elixir-1.4-blue.svg)]()
 [![Erlang/OTP Version](https://img.shields.io/badge/Erlang%2FOTP-19.3-blue.svg)]()
 
