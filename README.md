@@ -5,8 +5,8 @@
 [![Elixir Version](https://img.shields.io/badge/Elixir-1.4-blue.svg)]()
 [![Erlang/OTP Version](https://img.shields.io/badge/Erlang%2FOTP-19.3-blue.svg)]()
 
-# Exercism
-My solutions to Elixir [Exercism](http://exercism.io/languages/elixir/exercises) problems.
+# Exercism Elixir
+My solutions to Elixir [Exercism](http://exercism.io/languages/elixir/exercises) exercises.
 
 ## Table of Contents
 - [Motivation](#motivation)
